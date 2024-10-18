@@ -1,1 +1,3 @@
 # hashpress-docs
+
+mkdocs serve

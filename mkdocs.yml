@@ -1,0 +1,59 @@
+site_name: HashPress Documentation
+site_url: https://www.hashpresspioneers.com/
+theme:
+    name: material
+    logo: assets/logo.svg
+    favicon: assets/logo.svg
+    features:
+        - navigation.tabs
+        - navigation.sections
+        - toc.integrate
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - content.tabs.link
+        - content.code.annotation
+        - content.code.copy
+    language: en
+    palette:
+        - scheme: default
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+          primary: orange
+          accent: orange
+        - scheme: slate
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
+          primary: orange
+          accent: orange
+
+plugins:
+    - search
+
+extra:
+    social:
+        - icon: fontawesome/brands/github-alt
+          link: https://github.com/louweal
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/HederaHashPress
+        - icon: fontawesome/brands/discord
+          link: https://discord.gg/qHEyv3mapz
+
+markdown_extensions:
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - admonition
+    - pymdownx.arithmatex:
+          generic: true
+    - footnotes
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.mark
+    - attr_list
+
+copyright: |
+    &copy; 2024 <a href="https://www.hashpresspioneers.com"  target="_blank" rel="noopener">HashPress</a>
