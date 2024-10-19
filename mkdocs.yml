@@ -32,11 +32,11 @@ plugins: []
 
 extra:
     social:
-        - icon: fontawesome/brands/twitter
+        - icon: fontawesome/brands/x-twitter
           link: https://twitter.com/HederaHashPress
         - icon: fontawesome/brands/discord
           link: https://discord.gg/qHEyv3mapz
-        - icon: fontawesome/brands/github-alt
+        - icon: fontawesome/brands/github
           link: https://github.com/louweal
 
 extra_css:
