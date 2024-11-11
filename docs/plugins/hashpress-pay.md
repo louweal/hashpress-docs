@@ -4,7 +4,7 @@ HederaPay allows users to integrate Hedera transactions into their WordPress web
 
 ## Dependencies
 
--   [HashPress Core](/hashpress-core) — Small but essential plugin for establishing wallet connections.
+-   [HashPress Core](/plugins/hashpress-core) — Small but essential plugin for establishing wallet connections.
 
 ## Recommended Plugins
 
@@ -22,7 +22,7 @@ HederaPay allows users to integrate Hedera transactions into their WordPress web
 
 ## Configuration
 
-...
+No configuration needed, just make sure that you did the [configuration](/hashpress-core#configuration) for HashPress Core.
 
 ### WooCommerce
 
@@ -42,7 +42,7 @@ Adds a transaction button for sending transactions on Hedera. It uses [WalletCon
 | amount    | Amount to be send in _currency_ (see details) | null          |
 | currency  | Currency the _amount_ is in (see details)     | USD           |
 | memo      | Message to send along with the transaction    | null          |
-| wallet    | Receiver Account ID                           | null          |
+| wallet    | Receiver Account ID - Required                | null          |
 | accepts   | ...                                           | HBAR          |
 
 **Currency**
@@ -66,8 +66,6 @@ Example: `[hashpress_pay amount="0.1" currency="eur" title="☕︎ Buy us a coff
 
 On the [demo page](https://hashpresspioneers.com/plugins/hashpress-pay) you can find more examples.
 
-## Gutenberg block
+## Gutenberg Block
 
 On websites with Gutenberg (WordPress version >= 5.0) and [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/) you can use the _HederaPay Transaction Button_-Gutenberg block instead of the shortcode. The functionality and output are the same as the shortcode.
-
-![Gutenberg block](assets/gutenberg-block.png)

@@ -1,22 +1,30 @@
 # HashPress Reviews
 
-Integrate Hedera Smart Contracts into your WordPress website to get verifiable reviews. All reviews written using Realviews are stored on the Hedera network, connected to the purchase transaction and signed by the customer using their wallet. Therefore you can be sure that every review is, indeed, [real](https://github.com/louweal/hellofuturehackathon/tree/master/realviews#review-verification).
+Integrate Hedera Smart Contracts into your WordPress website to get verifiable reviews. All reviews written using Realviews are stored on the Hedera network, connected to the purchase transaction and signed by the customer using their wallet.
 
-## Dependencies / Required Plugins
+## Dependencies
 
--   [HederaPay](https://github.com/louweal/hellofuturehackathon/tree/master/hederapay#readme) - HederaPay adds all functionality needed to connect to the Hedera network and make payments on Hedera.
--   (OPTIONAL) [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/)
-    -   If ACF PRO is installed, the plugin adds easy to use Gutenberg blocks (these blocks have the same functionality as the shortcodes).
--   (OPTIONAL) [WooCommerce](https://woocommerce.com/)
-    -   If WooCommerce is installed the HederaPay option is added to the Payment options in the WooCommerce check-out and a Reviews section is added to the product pages.
+-   [HashPress Core](/plugins/hashpress-core) — Small but essential plugin for establishing wallet connections.
+
+## Recommended Plugins
+
+-   [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/) — HashPress Pay adds an ACF Gutenberg block
+-   [WooCommerce](https://woocommerce.com/) — HashPress Pay adds (optional) WooCommerce Payment Gateways.
 
 ## Installation
 
-Install [HederaPay](https://github.com/louweal/hellofuturehackathon/tree/master/hederapay#readme) if not yet installed. Then download the [realviews.zip](https://github.com/louweal/hellofuturehackathon/blob/master/realviews.zip) file from the root of this repository. Go to the `WP dashboard` **>** `Plugins`. Click `Add New Plugin` **>** `Upload Plugin` and upload the downloaded zipfile. This will upload and install the plugin, next click `Activate` to activate the plugin.
+1. Download the plugin as a ZIP file from its [repository](https://github.com/louweal/hashpress-reviews).
+2. Go to `Plugins` section in WordPress
+3. Click `Add New Plugin`
+4. Click `Upload Plugin`
+5. Upload the ZIP file
+6. Click `Activate`
 
-> Plugin will soon be listed in the build-in WordPress Plugin Store for easier installation.
+## Configuration
 
-## Configuration for WooCommerce shops _(optional)_
+...
+
+### WooCommerce
 
 On the Realviews admin page you can select the number of reviews you want to show on a product page and set the button text for showing more reviews (if available). This button triggers a modal showing all reviews. Set the number of reviews to `-1` to show all reviews in-page.
 
@@ -44,40 +52,38 @@ Realviews adds attribute `store` to the Hederapay transaction button that allows
 **Example**
 `[hederapay_transaction_button amount="5" currency="eur" title="Buy ebook" testnet_account="0.0.4505361" memo="Ebook purchase" store="true"]`
 
-#### Gutenberg
-
-Realviews also adds a `Store transactions` toggle to the Gutenberg block.
-
-![Store transactions](https://github.com/louweal/hellofuturehackathon/blob/master/realviews/assets/store-transactions.png)
-
 ### [realviews_latest_reviews]
 
 Retrieves all reviews for the current product/page from the Hedera Mirror [REST API](https://docs.hedera.com/hedera/sdks-and-apis/rest-api).
 
 > The reviews have a small badge in the top right corner when they are from the `testnet` or `previewnet` network.
 
-#### Attributes
+### [realviews_num_reviews]
+
+Displays the total number of reviews for the current product/page.
+
+Attributes
 
 | Attribute   | Description                                       | Default value |
 | :---------- | :------------------------------------------------ | :------------ |
 | max_reviews | Maximum number of reviews to show on product page | 2             |
 | button_text | Button text for showing all reviews               | All reviews   |
 
-#### Gutenberg block
+## Gutenberg Blocks
+
+### HashPress Pay
+
+Realviews also adds a `Store transactions` toggle to the Gutenberg block.
+
+### Latest Reviews
 
 On websites with Gutenberg (WordPress version >= 5.0) and [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/) you can use the _Latest Reviews (Realviews)_-Gutenberg block instead of the shortcode. The functionality and output are the same as the shortcode.
-
-![Gutenberg block](https://github.com/louweal/hellofuturehackathon/blob/master/realviews/assets/gutenberg-block.png)
-
-### [realviews_num_reviews]
-
-Displays the total number of reviews for the current product/page.
 
 ## Review verification
 
 All reviews written using Realviews are stored on the Hedera network, connected to the purchase transaction and signed by the customer using their wallet. Therefore you can be sure that every review is, indeed, **real**.
 
-### Inspecting transaction data
+**Inspecting transaction data**
 
 The following two steps allow everyone to check the raw transaction data on Hedera to verify the review.
 

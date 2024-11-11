@@ -1,6 +1,6 @@
 # HashPress Core
 
-...
+This lightweight plugin provides the foundational code required for all HashPress plugins to seamlessly connect with wallets.
 
 ## Installation
 

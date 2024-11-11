@@ -1,4 +1,4 @@
-site_name: HashPress Documentation
+site_name: HashPress Docs
 site_url: https://www.hashpresspioneers.com/
 theme:
     name: material
@@ -6,10 +6,10 @@ theme:
     favicon: assets/logo.svg
     # custom_dir: overrides
     features:
-        - navigation.tabs
+        # - navigation.tabs
         - navigation.sections
-        - toc.integrate
-        - navigation.top
+        # - toc.integrate
+        # - navigation.top
         - content.tabs.link
         - content.code.annotation
         - content.code.copy
