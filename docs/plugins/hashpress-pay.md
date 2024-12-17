@@ -1,6 +1,6 @@
 # HashPress Pay
 
-HederaPay allows users to integrate Hedera transactions into their WordPress websites and WooCommerce shops.
+HashPress Pay allows users to integrate Hedera transactions into their WordPress websites and WooCommerce shops.
 
 ## Dependencies
 
@@ -64,8 +64,8 @@ Amounts are converted to `HBAR` using the [CoinGecko API](https://docs.coingecko
 
 Example: `[hashpress_pay amount="0.1" currency="eur" title="☕︎ Buy us a coffee" network="testnet" wallet="0.0.4915084" accepts="USDC"]`
 
-On the [demo page](https://hashpresspioneers.com/plugins/hashpress-pay) you can find more examples.
+On the [demo page](https://hashpress.io/plugins/hashpress-pay) you can find more examples.
 
 ## Gutenberg Block
 
-On websites with Gutenberg (WordPress version >= 5.0) and [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/) you can use the _HederaPay Transaction Button_-Gutenberg block instead of the shortcode. The functionality and output are the same as the shortcode.
+On websites with Gutenberg (WordPress version >= 5.0) and [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/) you can use the _HashPress Pay_-Gutenberg block instead of the shortcode. The functionality and output are the same as the shortcode.

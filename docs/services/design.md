@@ -2,5 +2,5 @@
 
 We offer UX/UI design, website design, and logo design services to create intuitive, visually engaging, and impactful digital experiences.
 
--   [View our work](https://hashpresspioneers.com/service/design/#page)
--   [Get in touch](https://hashpresspioneers.com/services/design#contact)
+-   [View our work](https://hashpress.io/service/design)
+-   [Get in touch](https://hashpress.io/services/design)

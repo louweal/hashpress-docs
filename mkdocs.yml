@@ -1,5 +1,5 @@
 site_name: HashPress Docs
-site_url: https://www.hashpresspioneers.com/
+site_url: https://www.hashpress.io/
 theme:
     name: material
     logo: assets/logo.svg
@@ -48,4 +48,4 @@ markdown_extensions:
     - attr_list
 
 copyright: |
-    &copy; 2024 <a href="https://www.hashpresspioneers.com"  target="_blank" rel="noopener">HashPress</a>
+    &copy; 2024 <a href="https://www.hashpress.io"  target="_blank" rel="noopener">HashPress</a>

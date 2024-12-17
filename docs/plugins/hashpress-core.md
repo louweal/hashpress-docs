@@ -15,7 +15,7 @@ This lightweight plugin provides the foundational code required for all HashPres
 
 You will need a WalletConnect Project ID specifically for your current website (domainname). You can get one by going to [WalletConnect](https://cloud.walletconnect.com/) and setting up a new `WalletKit` project.
 
-Go to `Settings` > `HashPress Pay` and enter your project id.
+Go to `Settings` > `HashPress Pay` and enter your Project ID.
 
 ## Shortcodes
 
